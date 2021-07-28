@@ -1,13 +1,60 @@
 import os, argparse
 from time import sleep
+from core.colors import *
+from core.utils import *
 
 #init
 parse = argparse.ArgumentParser()
 parse.add_argument('-w', '--whataddress', help='Get type of wallet address', dest='whataddress')
+parse.add_argument('-t', '--track', help='Get all transactions from an address', dest='track')
 args = parse.parse_args()
 
+#just the banner of the software
+def banner():
+    print(yellow + "                                                        ,----,")
+    print("                                                      ,/   .`|")
+    print("    ,---,.   ,--,                            ,-.    ,`   .'  :                                 ,-.")
+    print("  ,'  .'  \,--.'|                        ,--/ /|  ;    ;     /                             ,--/ /|")
+    print(",---.' .' ||  | :     ,---.            ,--. :/ |.'___,/    ,' __  ,-.                    ,--. :/ |             __  ,-.")
+    print("|   |  |: |:  : '    '   ,'\           :  : ' / |    :     |,' ,'/ /|                    :  : ' /            ,' ,'/ /|")
+    print(":   :  :  /|  ' |   /   /   |   ,---.  |  '  /  ;    |.';  ;'  | |' | ,--.--.     ,---.  |  '  /      ,---.  '  | |' |")
+    print(":   |    ; '  | |  .   ; ,. :  /     \ '  |  :  `----'  |  ||  |   ,'/       \   /     \ '  |  :     /     \ |  |   ,'")
+    print("|   :     \|  | :  '   | |: : /    / ' |  |   \     '   :  ;'  :  / .--.  .-. | /    / ' |  |   \   /    /  |'  :  /")
+    print("|   |   . |'  : |__'   | .; :.    ' /  '  : |. \    |   |  '|  | '   \__\/: . ..    ' /  '  : |. \ .    ' / ||  | '")
+    print("'   :  '; ||  | '.'|   :    |'   ; :__ |  | ' \ \   '   :  |;  : |   ,' .--.; |'   ; :__ |  | ' \ \'   ;   /|;  : |")
+    print("|   |  | ; ;  :    ;\   \  / '   | '.'|'  : |--'    ;   |.' |  , ;  /  /  ,.  |'   | '.'|'  : |--' '   |  / ||  , ;")
+    print("|   :   /  |  ,   /  `----'  |   :    :;  |,'       '---'    ---'  ;  :   .'   \   :    :;  |,'    |   :    | ---'")
+    print("|   | ,'    ---`-'            \   \  / '--'                        |  ,     .-./\   \  / '--'       \   \  /")
+    print("`----'                         `----'                               `--`---'     `----'              `----'\n")
+    message()
+
+def message():
+    print(red + f"""   Search and track blockchain transactions from a wallet address
+    ~ Code by Keany Vy KHUN \ Python program \ {sys.platform}
+     - Github : https://github.com/thisiskeanyvy
+      # Instagram : https://instagram.com/thisiskeanyvy
+       ^ Twitter : https://twitter.com/thisiskeanyvy
+    """)
+
+def help():
+    print(red + """
+     -------------------------------------------------------------
+    |    usage: blocktracker.py [-h] [-w WHATADDRESS]             |
+    |                                                             |
+    |    optional arguments:                                      |
+    |    -h, --help            show this help message and exit    |
+    |    -w WHATADDRESS, --whataddress WHATADDRESS                |
+    |    Get type of wallet address                               |
+     -------------------------------------------------------------""")
+
 #variables
-unk_address = args.whataddress.split(',')
+try:
+    unk_address = args.whataddress.split(',')
+except:
+    try:
+        track_address = args.track.split(',')
+    except:
+        banner()
 
 """
 Address format (start with):
@@ -36,46 +83,54 @@ t1 or t2 - Zcash (ZEC)
 def whataddress(): #try to determine type of wallet address
     for i in range(len(unk_address)): #offline verification
         address_toverify = unk_address[i];
-        if "0x" in address_toverify[0:2]:
+        if '0x' in address_toverify[0:2]:
             print("Ethereum (ETH)")
-        elif "tz" in address_toverify[0:2]:
+        elif 'tz' in address_toverify[0:2]:
             print("Tezos (XTZ)")
-        elif "3P" in address_toverify[0:2]:
+        elif '3P' in address_toverify[0:2]:
             print("Waves (WAVES)")
-        elif "t1" in address_toverify[0:2] or "t2" in address_toverify[0:2]:
+        elif 't1' in address_toverify[0:2] or 't2' in address_toverify[0:2]:
             print("Zcash (ZEC)")
-        elif "bitcoincash:q" in address_toverify[0:13]:
+        elif 'bitcoincash:q' in address_toverify[0:13]:
             print("Bitcoin Cash (BCH)")
-        elif "addr" in address_toverify[0:4]:
+        elif 'addr' in address_toverify[0:4]:
             print("Cardano (ADA)")
-        elif "cosmos" in address_toverify[0:5]:
+        elif 'cosmos' in address_toverify[0:5]:
             print("Cosmos (ATOM)")
-        elif "3" in address_toverify[0:1]:
+        elif '3' in address_toverify[0:1]:
             print("Bitcoin (BTC)")
-        elif "X" in address_toverify[0:1]:
+        elif 'X' in address_toverify[0:1]:
             print("Dash (DASH)")
-        elif "D" in address_toverify[0:1]:
+        elif 'D' in address_toverify[0:1]:
             print("Dogecoin (DOGE)")
-        elif "R" in address_toverify[0:1]:
+        elif 'R' in address_toverify[0:1]:
             print("Komodo (KMD)")
-        elif "L" in address_toverify[0:1]:
+        elif 'L' in address_toverify[0:1]:
             print("Lisk (LSK)")
-        elif "M" in address_toverify[0:1]:
+        elif 'M' in address_toverify[0:1]:
             print("Litecoin (LTC)")
-        elif "N" in address_toverify[0:1]:
+        elif 'N' in address_toverify[0:1]:
             print("NEM (XEM)")
-        elif "A" in address_toverify[0:1]:
+        elif 'A' in address_toverify[0:1]:
             print("NEO (NEO) or Ontology (ONT)")
-        elif "1" in address_toverify[0:1]:
+        elif '1' in address_toverify[0:1]:
             print("Polkadot (DOT)")
-        elif "r" in address_toverify[0:1]:
+        elif 'r' in address_toverify[0:1]:
             print("Ripple (XRP)")
-        elif "G" in address_toverify[0:1]:
+        elif 'G' in address_toverify[0:1]:
             print("Stellar (XLM)")
-        elif "T" in address_toverify[0:1]:
+        elif 'T' in address_toverify[0:1]:
             print("TRON (TRX)")
         else:
             print("Addtess type unknown or not supported ???")
 
-if __name__ == "__main__":
-    whataddress()
+#start function
+try:
+    if unk_address:
+        whataddress()
+except:
+    try:
+        if track_address:
+            scan_transactions(track_address)
+    except:
+        help()
