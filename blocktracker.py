@@ -29,22 +29,24 @@ def banner():
     message()
 
 def message():
-    print(red + f"""   Search and track blockchain transactions from a wallet address
-    ~ Code by Keany Vy KHUN \ Python program \ {sys.platform}
-     - Github : https://github.com/thisiskeanyvy
-      # Instagram : https://instagram.com/thisiskeanyvy
-       ^ Twitter : https://twitter.com/thisiskeanyvy
+    print(f"""{red}   Search and track blockchain transactions from a wallet address       {green}°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸{red}
+    ~ Code by Keany Vy KHUN \ Python program \ {sys.platform}             {white}°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸{red}
+     - Github : https://github.com/thisiskeanyvy        {green}°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸{red}
+      # Instagram : https://instagram.com/thisiskeanyvy         {white}°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸{red}
+       ^ Twitter : https://twitter.com/thisiskeanyvy                       {green}°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸{red}
     """)
 
 def help():
-    print(red + """
-     -------------------------------------------------------------
-    |    usage: blocktracker.py [-h] [-w WHATADDRESS]             |
-    |                                                             |
-    |    optional arguments:                                      |
-    |    -h, --help            show this help message and exit    |
-    |    -w WHATADDRESS, --whataddress WHATADDRESS                |
-    |    Get type of wallet address                               |
+    print(f"""
+     -------------------------------------------------------------          {white}H{red}e{white}l{red}l{white}o{red} {white}W{red}o{white}r{red}l{white}d {red}!
+    |  usage: blocktracker.py [-h] [-w WHATADDRESS] [-t TRACK]    |               {white}__...--~~~~~-._   _.-~~~~~--...__{red}
+    |                                                             |             {white}//               `V'               \\{red}
+    |  optional arguments:                                        |            {white}//                 |                 \\{red}
+    |  -h, --help            show this help message and exit      |           {white}//__...--~~~~~~-._  |  _.-~~~~~~--...__\\{red}
+    |  -w WHATADDRESS, --whataddress WHATADDRESS                  |          {white}//__.....----~~~~._\ | /_.~~~~----.....__\\{red}
+    |  Get type of wallet address                                 |         {white}====================\\|//===================={red}
+    |  -t TRACK, --track TRACK                                    |                         {green}BlockTracker `---`{red}
+    |  Get all transactions from an address                       |
      -------------------------------------------------------------""")
 
 #variables
