@@ -56,85 +56,93 @@ $ python3 blocktracker.py
 $ python3 blocktracker.py -h #--help 
 ```
 
-> usage: blocktracker.py [-h] [-w WHATADDRESS] [-t TRACK] 
->
-> optional arguments: 
-> -h, --help       show this help message and exit 
-> -w WHATADDRESS, --whataddress WHATADDRESS 
-> Get type of wallet address 
-> -t TRACK, --track TRACK 
-> Get all transactions from an address
+```shell
+usage: blocktracker.py [-h] [-w WHATADDRESS] [-t TRACK] 
+
+optional arguments: 
+-h, --help       show this help message and exit 
+-w WHATADDRESS, --whataddress WHATADDRESS 
+Get type of wallet address 
+-t TRACK, --track TRACK 
+Get all transactions from an address
+```
 
 ```shell
 $ python3 blocktracker.py -w TScgcMteFMiYzXMgWPoKkaTNnKaLWZnnPb #--whataddress
 ```
 
-> TRON (TRX)
+```shell
+TRON (TRX)
+```
 
 ```shell
 $ python3 blocktracker.py -t 0xbaf681271070c832DbB217665ACf0005f0A87A0c #--track
 ```
 
-> Address n°1 : 0xbaf681271070c832DbB217665ACf0005f0A87A0c 
-> \----------------- 
-> \- Transactions List - 
->
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \----------------- 
-> Time : 1553456807 
-> From : 0x6a67e74a202949c6a08496cd764452970135862c 
-> To : 0x6a67e74a202949c6a08496cd764452970135862c 
-> \-----------------
+```shell
+Address n°1 : 0xbaf681271070c832DbB217665ACf0005f0A87A0c 
+\----------------- 
+\- Transactions List - 
+
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\----------------- 
+Time : 1553456807 
+From : 0x6a67e74a202949c6a08496cd764452970135862c 
+To : 0x6a67e74a202949c6a08496cd764452970135862c 
+\-----------------
+```
+
+
 
 #### Using the advanced tool :
 
