@@ -67,6 +67,8 @@ Get type of wallet address
 Get all transactions from an address
 ```
 
+#Know the type of crypto-currency in the wallet
+
 ```shell
 $ python3 blocktracker.py -w TScgcMteFMiYzXMgWPoKkaTNnKaLWZnnPb #--whataddress
 ```
@@ -74,6 +76,8 @@ $ python3 blocktracker.py -w TScgcMteFMiYzXMgWPoKkaTNnKaLWZnnPb #--whataddress
 ```shell
 TRON (TRX)
 ```
+
+#Get the transaction tree of one or more addresses of a wallet
 
 ```shell
 $ python3 blocktracker.py -t 0xbaf681271070c832DbB217665ACf0005f0A87A0c #--track
