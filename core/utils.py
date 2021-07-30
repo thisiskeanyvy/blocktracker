@@ -16,9 +16,9 @@ def scan_transactions(track_address):
                 print("-----------------")
                 print("- Transactions List -\n")
                 for j in range(len(data["result"])):
-                    from_addr = data["result"][i]["from"]
-                    to_addr = data["result"][i]["to"]
-                    ts_addr = data["result"][i]["timeStamp"]
+                    from_addr = data["result"][j]["from"]
+                    to_addr = data["result"][j]["to"]
+                    ts_addr = data["result"][j]["timeStamp"]
                     ts_addr = datetime.fromtimestamp(int(ts_addr))
                     print(f"Time : {ts_addr}")
                     print(f"From : {from_addr}")
