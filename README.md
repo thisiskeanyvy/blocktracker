@@ -3,7 +3,7 @@ A tool to go up the transaction tree of an address on the Blockchain.
 
 ## What is BlockTracker?
 
-BlockTracker is a tool for tracking transactions from wallet addresses on the Blockchain. It is able to list them and establish a transaction tree. 
+BlockTracker is a tool for tracking transactions from wallet addresses on the Blockchain. It is able to list them and establish a transaction tree.
 
 Even after mixing funds from one or more wallets, it is able to trace the transactions back to the final wallet address.
 
@@ -53,17 +53,17 @@ $ python3 blocktracker.py
 #List the commands that can be used
 
 ```shell
-$ python3 blocktracker.py -h #--help 
+$ python3 blocktracker.py -h #--help
 ```
 
 ```shell
-usage: blocktracker.py [-h] [-w WHATADDRESS] [-t TRACK] 
+usage: blocktracker.py [-h] [-w WHATADDRESS] [-t TRACK]
 
-optional arguments: 
--h, --help       show this help message and exit 
--w WHATADDRESS, --whataddress WHATADDRESS 
-Get type of wallet address 
--t TRACK, --track TRACK 
+optional arguments:
+-h, --help       show this help message and exit
+-w WHATADDRESS, --whataddress WHATADDRESS
+Get type of wallet address
+-t TRACK, --track TRACK
 Get all transactions from an address
 ```
 
@@ -92,57 +92,57 @@ Time : 2019-03-24 20:46:47
 From : 0x6a67e74a202949c6a08496cd764452970135862c
 To : 0x6a67e74a202949c6a08496cd764452970135862c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-24 20:54:24
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-25 18:19:42
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-25 18:29:21
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-25 18:33:11
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-27 21:27:38
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-27 21:42:05
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-03-27 23:02:56
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-07-07 22:57:04
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-07-07 23:35:16
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-07-11 01:11:11
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-07-15 00:51:09
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-09-06 23:36:25
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
-Time : 2019-03-24 20:46:47
-From : 0x6a67e74a202949c6a08496cd764452970135862c
-To : 0x6a67e74a202949c6a08496cd764452970135862c
+Time : 2019-12-26 17:08:43
+From : 0xbaf681271070c832dbb217665acf0005f0a87a0c
+To : 0xbaf681271070c832dbb217665acf0005f0a87a0c
 -----------------
 ```
 
@@ -223,4 +223,3 @@ Supported crypto-currencies :
 - [ ] Zcash (ZEC)
 
 ------
-
