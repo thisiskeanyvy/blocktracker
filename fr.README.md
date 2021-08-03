@@ -48,7 +48,7 @@ $ python3 blocktracker.py
   - Requests (libraries)
 - Pip >= 3
 
-### Utilisation du logiciel de ligne de commande :
+### Utilisation du logiciel en ligne de commande :
 
 #Liste des commandes qui peuvent être utilisées
 

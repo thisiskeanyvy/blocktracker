@@ -1,2 +1,4 @@
 argparse
 requests
+pandas
+tabloo
